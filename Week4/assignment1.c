@@ -70,11 +70,11 @@ int solveMaze(char **maze, const int HT, const int WD, int p, int o){
                                         {
                                                 printf("%d %d\n", x, y);
                                                 DEADEND+=1;
-                                                for (y; y<WD; y++)
+                                                for (int Y=y; Y<WD; Y++)
                                                         {
-                                                        if ((maze[x+1][y]==*"#" && maze[x][y+1]!=*"#") || (maze[x+1][y]!=*"#" && maze[x][y+1]==*"#"))
+                                                        if ((maze[x+1][Y]==*"#" && maze[x][Y+1]!=*"#") || (maze[x+1][Y]!=*"#" && maze[x][Y+1]==*"#"))
                                                                 {
-                                                                maze[x][y]=*" ";
+                                                                maze[x][Y]=*" ";
                                                                 }
 							else
                                                                 {
@@ -144,13 +144,13 @@ int solveMaze(char **maze, const int HT, const int WD, int p, int o){
                                                 printf("%d %d\n", x, y);
 
                                                 DEADEND+=1;
-                                                for (y; y<WD; y++)
+                                                for (int Y=y; Y<WD; Y++)
                                                         {
-                                                        if ((maze[x-1][y]==*"#" && maze[x][y+1]!=*"#") || (maze[x-1][y]!=*"#" && maze[x][y+1]==*"#"))
+                                                        if ((maze[x-1][Y]==*"#" && maze[x][Y+1]!=*"#") || (maze[x-1][Y]!=*"#" && maze[x][Y+1]==*"#"))
                                                                 {
-                                                                maze[x][y]=*" ";
+                                                                maze[x][Y]=*" ";
                                                                 }
-                                                        if (maze[x-1][y]!=*"#")
+							else
                                                                 {
                                                                 break;
                                                                 }
@@ -219,13 +219,13 @@ int solveMaze(char **maze, const int HT, const int WD, int p, int o){
 						printf("%d %d\n", x, y);
 
         			                DEADEND+=1;
-						for (y; y<WD; y++)
+						for (int Y=y; Y<WD; Y++)
 							{	
-                                                        if (maze[x+1][y]==*"#" && maze[x-1][y]==*"#")
+                                                        if (maze[x+1][Y]==*"#" && maze[x-1][Y]==*"#")
                                                                 {
-                                                                maze[x][y]=*" ";
+                                                                maze[x][Y]=*" ";
                                                                 }
-							if (maze[x+1][y]!=*"#" && maze[x-1][y]!=*"#")
+							else
                                                                 {
                                                                 break;
                                                                 }
