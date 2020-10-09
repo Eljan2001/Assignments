@@ -6,8 +6,8 @@ int solveMaze(char **maze, const int HT, const int WD, int y, int x); // draws a
 
 int main(){
     char mazeStr[] ="  ##############"
-		    "#    ###########"
-		    "# ####*     ####"
+		    "#    ##     ####"
+		    "# ####* ### ####"
 		    "#    ###### ####"
 		    "#### # #### ####"
 		    "#    # #### ####"
