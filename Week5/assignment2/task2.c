@@ -12,7 +12,9 @@ struct stack
 void push(char item)
 {
 	if (s.top == (MAX - 1))
+        {
 		printf ("Stack is Full\n");
+        }
 	else
 	{
 		s.top = s.top + 1; 
