@@ -44,12 +44,12 @@ int main(){
   root->left = newNode(5);
   root->right = newNode(10);
   root->left->left = newNode(20);
-  root->left->left->left = newNode(13);
+  root->left->left->left = newNode(999);
   root->left->right = newNode(4);
   root->right->right = newNode(20);
   root->right->right->right = newNode(15);
   root->right->left = newNode(21);
-  root->left->right->right = newNode(999);
+  root->left->right->right = newNode(13);
   
   printf("maximum sum of tree nodes: %d",addNodes(root));
 
