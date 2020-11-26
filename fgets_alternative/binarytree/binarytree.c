@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "binarytree.h"
 struct Node{
   int value;
   struct Node* left;
