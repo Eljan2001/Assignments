@@ -1,0 +1,1 @@
+This program takes input from a user and after the input is "DONE" , it again takes an input and swaps the next value inside the stack if this value was not used before. Type "DONE" second time to exit the program.
